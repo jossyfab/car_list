@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> 
+    <title>Car List</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Add Car</h1>
+        <form id="car-form">
+            <div>
+                <label for="car-make">Car Make</label>
+                <input type="text" id="car-make">
+            </div>
+            <div>
+                <label for="car-model">Car Model</label>
+                <input type="text" id="car-model">
+            </div>
+            <div>
+                <label for="year">Year</label>
+                <input type="text" id="year">
+            </div>
+            <div>
+                <input type="submit" value="submit">
+            </div>
+        </form>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Car Make</th>
+                    <th>Car Model</th>
+                    <th>Year</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="car-list"></tbody>
+        </table>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
